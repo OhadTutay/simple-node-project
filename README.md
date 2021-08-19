@@ -4,6 +4,8 @@ NodeJS project sturcture with Typescript, PostgreSQL, TypeORM, Express and expre
 
 ## Installation
 
+** Make sure you got docker-cli, node, npm locally **
+
 Steps:
 
 1. Setup .env file

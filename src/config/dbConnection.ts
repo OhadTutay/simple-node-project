@@ -2,7 +2,10 @@ import { createConnection, getConnection, ConnectionOptions, Connection } from "
 import { resolve } from "path";
 
 const getConnectionSaftly = (): Connection | null => {
-  let conn = getConnection() || null;
+  let conn = null;
+  try {
+    conn = getConnection();
+  } catch (e) {}
 
   return conn;
 };
